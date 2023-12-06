@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Injury Tracking System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application for tracking and managing injury reports. Users can create, view, update, and delete injury reports. 
 
-## Available Scripts
+[Front-End Deployment-](https://injurytracking.netlify.app/)
 
-In the project directory, you can run:
+![Screenshot-](https://raw.githubusercontent.com/shivansh1507/InjuryTracking/master/Desktop/Lief/injury-tracking-system/Injury-tracking.jpg)
 
-### `npm start`
+![Screenshot Login Page Auth0-](https://raw.githubusercontent.com/shivansh1507/InjuryTracking/master/Desktop/Lief/injury-tracking-system/Injury-tracking%20login.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application includes the following features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Report Management
 
-### `npm run build`
+- **Create, View, Update, and Delete Injury Report:**
+  Users can perform CRUD operations on injury reports, including providing the name of the reporter, date & time of the injury, and details for each area encircled on the body map.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Body Map:**
+  Users can encircle different areas of injury on a body map image, and the system automatically labels each circle with a number.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **List of Injuries:**
+  For each encircled area, users can provide details of the injury.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. List of Reports
 
-### `npm run eject`
+- **View List/Table of All Injuries:**
+  Users can see a table of all reported injuries, including the name, date/time of injury, and date of the report.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Sorting:**
+  Users can sort the list/table by name, date/time of injury, or date of the report.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Search:**
+  Users can search for specific injuries by name.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Filter:**
+  Users can filter injuries by the start and end date of the injury and date of the report.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. User Authentication
 
-## Learn More
+- **Register/Login/Logout:**
+  Users can register for an account using a username and password. Additionally, users can log in and log out of their accounts.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Authentication Providers:**
+  Users have options for Google login and email login.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Task History:**
+  Authenticated users can view a history of their tasks.
 
-### Code Splitting
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Front-end:**
+  - React.js 
+  - React Context for state management.
+  - 
+- **Authentication:**
+  - Auth0 for user authentication.
+  - Options for Google login and email login.
